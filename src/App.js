@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
+
+// import BoxMaker from './components/BoxMaker/BoxMaker';
+// import HooksTodo from './components/HooksTodo';
+// import ContextRegistration from './components/ContextRegistration';
+import ContextWithHooks from './components/ContextWithHooks';
+
+// import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <React.Fragment>
+    {/* <HooksTodo /> */}
+    <ContextWithHooks />
+  </React.Fragment>
+);
 
 export default App;
